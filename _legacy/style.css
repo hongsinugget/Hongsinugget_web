@@ -151,7 +151,7 @@ body::before {
 }
 
 .typing-container h1 .thin {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .typing-container h1 strong {
@@ -1004,6 +1004,7 @@ h2 {
     display: flex;
     gap: 12px;
     align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1024px) {
