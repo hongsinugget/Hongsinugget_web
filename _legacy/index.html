@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongsinugget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="header">
+        <img src="../public/images/logo.svg" alt="logo" class="logo">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="typing-container">
+                    <h1><span class="thin">안녕하세요.<br></span><strong>홍시너겟</strong><span class="thin">입니다.</span><span
+                            class="role-text"><span class="thin">저는 </span><span id="typing-text"></span><span
+                                class="thin"> 을 하고 있어요.</span></span></h1>
+                </div>
+                <p class="hero-subtitle">
+                    디자인으로 시작해 마케팅을 거쳐,<br>
+                    지금은 데이터를 통해 세상을 이해하는 법을 배우고 있어요.<br>
+                    비록 작은 일을 하더라도 결국 의미 있는 결과를 만들 수 있다고 믿습니다.<br>
+                    <strong>작은 손길로 시작된 무언가가 세상에 울림을 만들 수 있기를.</strong>
+                </p>
+                <div class="hero-buttons">
+                    <a href="../public/Hongsinugget_CV.pdf" class="btn-download" download="Hongsinugget_CV.pdf">Download
+                        CV</a>
+                    <div class="social-icons">
+                        <a href="https://hongsinugget.tistory.com/"><img src="../public/images/tistory.svg"
+                                alt="tistory"></a>
+                        <a href="https://github.com/hongsinugget"><img src="../public/images/github.svg"
+                                alt="github"></a>
+                        <a href="https://www.linkedin.com/in/yangsubindev/"><img src="../public/images/linkedin.svg"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="character-wrapper">
+                <div class="character-bg"></div>
+                <img class="character" src="../public/images/hongsinugget.png" alt="character">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>저는 이런 사람이에요.</h2>
+        <div class="about-content">
+            <p>
+                서비스 출시 후 도출된 유저 반응에 대한 호기심이 커져 마케터를 공부를 시작 했어요.<br>
+                트렌디한 디자인 레퍼런스를 빠르게 찾아 적용하며, 협업 과정에서 효율적인 작업 방식을 만드는 것을 중요하게 생각해요.<br>
+                동료들이 어려워하는 부분을 정리하고 규칙을 만들어, 신속하고 체계적으로 업무를 수행하는 스타일을 선호해요.<br>
+                정해진 틀 안에서만 작업하는 것이 아니라, 새로운 해결책을 찾아내고 최적화하는 과정에서 보람을 느껴요.<br>
+                동료들과 지식을 공유하고 배우는 것을 즐기며, 문제를 개선하고 더 나은 결과를 만들어내는 과정에서 업무의 재미를 찾아요.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p class="section-subtitle">작은 아이디어를 의미 있는 프로젝트로.<br>
+            디자인과 마케팅 경험을 바탕으로,<br>
+            관심 있는 개발 분야까지 한 걸음씩 확장해가고 있어요.</p>
+
+        <!-- 필터 탭 -->
+        <div class="filter-tabs" role="tablist" aria-label="프로젝트 필터">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
+            <button class="filter-btn" data-filter="dev" aria-pressed="false">Dev</button>
+            <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+            <div class="project-card" data-category="dev">
+                <div class="project-image">
+                    <img src="../public/images/gimjepay/gimje_1.png" alt="김제페이">
+                    <a class="view-more" data-project="gimjepay">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">김제페이</h3>
+                    <p class="project-desc">김제페이:일상회복지원금 사용처를 한눈에!<br> 김제시에서 지원하는 일상회복지원금의 사용처를 한눈에 볼수있게 지도서비스를 제작</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프로젝트 개요</h4>
+                        김제페이의 사용자 경험을 개선하고, 지역 내 사용률을 높이기 위해 직접적인 데이터 수집과 개발을 진행했습니다.<br>
+                        기존에 김제시에서 가맹점 정보가 체계적으로 정리되지 않아, 실사용자의 니즈를 반영한 개선이 어려운 상황이었습니다.<br><br>
+
+                        - 김제시 커뮤니티 다수 회복 지원금 사용처를 물어보는 유저 voc를 듣고 기획<br>
+                        - 빠르게 배포하는만큼 최소한의 기능으로 제작 (검색,사용가능확인,제보,실시간위치확인)<br>
+                        - 트위터 홍보 약 1.6만 조회수 증가<br><br>
+
+                        <h4>해결한 문제 및 개선점</h4>
+                        가맹점 정보 부족 → 직접 데이터 수집 및 정리<br><br>
+                        - 온라인에서 김제페이 관련 커뮤니티를 직접 분석하여 사용자 후기와 문제점을 정리<br>
+                        - 김제 지역 내 가맹점을 직접 방문하여 결제 가능 여부를 수기로 기록, 데이터화<br>
+                        - 사용자 제보 시스템을 운영하여 실제 이용자의 경험을 반영한 데이터 수집
+                    </div>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>Html/css</span>
+                        <span>Nodejs</span>
+                        <span>jquery</span>
+                        <span>javascript</span>
+                        <span>vercel</span>
+                        <span>Notion</span>
+                        <span>kakao/naver API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="dev">
+                <div class="project-image">
+                    <img src="../public/images/jipyeong/jipyeong_main.png" alt="지평선테스트">
+                    <a class="view-more">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">지평선 전생테스트</h3>
+                    <p class="project-desc">200년 전으로 돌아가게 된 당신...<br>
+                        5개의 질문을 통해 당신의 전생 모습을 찾아보세요!</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프로젝트 개요</h4>
+                        지평선 축제를 자연스럽게 홍보하고 사용자 참여를 유도하기 위해 전생 테스트 웹 서비스를 기획·디자인·개발했습니다.<br>
+                        축제 D-day가 다가오는 상황에서 빠른 배포, 가벼운 UX, 자연스러운 확산성을 목표로 진행했습니다.<br><br>
+
+                        <h4>김제시 공식 인스타그램 콘텐츠를 기반으로 아이디어 발굴</h4>
+                        - ‘200년 전으로 돌아간다’는 콘셉트의 테스트 제작 (MBTI → 지역 전통 체험 → 전생 테스트)<br>
+                        - 사용자 테스트 결과를 반영한 커스텀 캐릭터 일러스트 제작<br>
+                        - 핵심 기능만 최소화하여 빠른 배포 (결과 페이지, 소셜 공유용 OG 이미지)<br>
+                        - 바이브코딩 활용(GPT → Claude 4.5)으로 개발 속도를 3배 단축<br><br>
+
+                        <h4>결과</h4>
+                        축제 아이덴티티와 연계된 인터랙티브 콘텐츠 완성
+                    </div>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>Html/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Vercel</span>
+                        <span>Notion</span>
+                        <span>Claude</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="../public/images/nullz/nullz_main.png" alt="NULLZ 크리에이터">
+                    <a class="view-more">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">NULLZ 크리에이터</h3>
+                    <p class="project-desc">Nullz 핫크리에이터 등극 & 널즈(Nulz) 파트너 크리에이터 활동</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프로젝트 개요</h4>
+                        처음에는 널즈에서 일반 판매자로 활동하며 디자인 리소스를 제작·판매했지만, 이후 널즈의 파트너 크리에이터로 선정되어 월별 수익을 받으며 프리랜서로 활동했습니다.<br>
+                        단순한 디자인 판매가 아니라, 양질의 디자인 리소스를 제공하는 것을 목표로 하여 매월 50개의 새로운 디자인을 제작하며 크리에이터 활동을 지속했습니다.<br><br>
+
+                        <h4>결과물</h4>
+                        - 기존 플랫폼의 디자인 리소스의 품질 향상 → 차별화된 디자인 제공<br>
+                        - 기존 판매 데이터를 분석하여 수요가 높은 디자인 유형을 반영<br>
+                        - 널즈에서 활동하는 다양한 크리에이터들의 작업물을 참고하며 디자인 감각을 확장<br>
+                        - 회사 경험을 통해 더욱 능숙한 디자인 작업 프로세스 구축<br>
+                        - 콘텐츠 노출 극대화 → 널즈 공식 홍보 채널 활용<br>
+                        - 널즈에서 직접 디자인을 선정하여 인스타그램 홍보 진행<br>
+                        - 지속적인 업로드를 통해 총 149개의 디자인 리소스를 등록, 그중 144개 판매
+                    </div>
+                    <div class="project-tags">
+                        <span>Illustrator</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <img src="../public/images/marketer/marketer_main.png" alt="청년마케터 서포터즈">
+                    <a class="view-more">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">청년마케터 서포터즈</h3>
+                    <p class="project-desc">청년마케터 서포터즈 대외활동</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프로젝트 개요</h4>
+                        처음에는 청년마케터 서포터즈 1기에 합격하여 발대식 및 정기 모임에 참여하며,<br>
+                        이후 청년마케터 서포터즈의 주요 멤버로 활동했습니다.<br>
+                        서포터즈 기간에는 오프라인 월간 모임 홍보 및 후기 작성을 기반으로 콘텐츠 홍보 서포트 업무를 수행했고,<br>
+                        이후 커뮤니티 내부에서도 지속적으로 생생한 후기 공유 및 홍보 역할을 담당했습니다.<br><br>
+                        - 2023년 3월, 청년마케터 서포터즈 1기 합격 및 발대식 참여<br>
+                        - 서포터즈 활동 당시 매달 월간 모임 후기 작성 및 홍보 콘텐츠 제작<br>
+                        - 이후 커뮤니티 멤버로 연속 참여하며 콘텐츠 홍보 및 후기 기여 지속<br><br>
+
+                        <h4>서포터즈 내 활동</h4>
+                        - 단순 후기 작성이 아닌, 월간모임 마케팅 주제 중심 강의 후기와 인사이트 정리<br>
+                        - 강연 후기를 통해 모임의 가치와 배움을 구체적으로 공유하여 활동 홍보<br>
+                        - 인스타·블로그를 통해 모임 소개, 주요 강사 소개, 강연 내용 요약 등을 콘텐츠화<br>
+                        - 후기 게시글로 행사 참가자 유치 및 브랜드 이미지 제고에 도움<br><br>
+
+                        <h4>성과</h4>
+                        - 정식 1기 서포터즈 활동 후기 작성 → 강연 요약 콘텐츠와 독서 콘텐츠 가치 제공
+                        - 매월 후기 포스팅과 공유 및 조회수를 통해 커뮤니티 인지도 향상
+                        - 후기 콘텐츠를 기반으로 청년마케터 공식 홍보 채널 유입에 기여
+                        - GA 합격 및 마케팅 인턴 합격
+                    </div>
+                    <div class="project-tags">
+                        <span>supporters</span>
+                        <span>marketing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="../public/images/silentmonster/silentmonster_main.png" alt="silentmonster">
+                    <a class="view-more">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">SilentMonster</h3>
+                    <p class="project-desc">SilentMonster 창업</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프로젝트 개요</h4><br>
+                        2024년 5월, 서울 강남구에 사업장을 두고 디자인 스튜디오 ‘사일런트 몬스터’를 창업했습니다.<br>
+                        사일런트 몬스터는 ‘조용하지만 강력한 존재’라는 의미를 담아,<br>
+                        남들과 차별화된 디자인과 브랜드 아이덴티티를 구축하는 것을 목표로 운영되었습니다.<br><br>
+
+                        프리랜서로 활동하며 셀프 브랜딩을 진행했으며, 인스타그램을 활용한 홍보, 널즈(Nulz) 및 외주 작업을 중심으로 수익을 창출했습니다.<br><br>
+
+                        <h4>결과물</h4><br>
+                        브랜드 아이덴티티 구축 → 차별화된 디자인 컨셉 정립<br>
+
+                        - 단순한 디자인 서비스가 아닌, 조용하지만 강력한 브랜드 메시지를 담은 스튜디오 운영<br>
+                        - ‘우리는 조용하지만, 악동 몬스터들’이라는 슬로건을 기반으로 브랜드 차별화<br>
+                        - 회사 경험을 통해 더욱 능숙한 디자인 작업 프로세스 구축<br>
+                        - 널즈(Nulz) 및 외주 프로젝트 중심으로 디자인 작업 진행<br>
+                        - 인스타그램을 활용한 셀프 브랜딩 및 고객 유입 증가<br><br>
+
+                        <h4>프리랜서 경험을 통한 차기 단계 모색 → IT 분야로 개인서비스 확장 준비</h4><br>
+
+                        - 그래픽 디자인 중심의 작업에서 IT 서비스로 방향 설정<br>
+                        - 단순한 디자인 스튜디오를 넘어 새로운 팀을 구성할 계획
+                    </div>
+                    <div class="project-tags">
+                        <span>Illustrator</span>
+                        <span>Figma</span>
+                        <span>Imweb</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="../public/images/designer/designer_main.png" alt="디자인작업물">
+                    <a class="view-more">View More →</a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">디자인작업물</h3>
+                    <p class="project-desc">프리랜서 디자인 작업물</p>
+                    <div class="modal-full-desc" style="display: none;">
+                        <h4>프리랜서 디자이너 활동</h4>
+                        프리랜서로 디자인을 활동하면서 작업한 작업물입니다.<br><br>
+
+                        <h4>각종 담당 작업프로젝트</h4><br>
+                        - 폴카닷 디자인 제작 현장 작업물<br>
+                        - 이드서울 메인 키비주얼 및 전체적인 디자인 담당<br>
+                        - gvcn 디자인 참여<br>
+                        - Devstory 이벤트 홍보물 포스터 제작 (개인제작)등
+                    </div>
+                    <div class="project-tags">
+                        <span>Illustrator</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience-activities-container">
+            <div class="section-column">
+                <h2>My Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025.10 - ing </div>
+                        <div class="timeline-title">스마트잇 Performance Marketer</div>
+                        <p class="timeline-desc">
+                            Marketing Team leader<br><br>
+                            - 메타 광고 콘텐츠 운영 기획, AI 활용 및 광고 제작<br>
+                            - 광고 퍼포먼스를 분석하여 타겟팅 전략 개선 및 예산 효율 극대화<br>
+                            - 광고 효율 극대화를 위한 A/B 테스트 와 CTR개선 및 CPM 효율 최적화<br>
+                            - 캠페인 운영 및 성과 보고
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025.02 - 06</div>
+                        <div class="timeline-title">UXDOT 파트너 마케팅 매니저</div>
+                        <p class="timeline-desc">
+                            Marketing freelancer<br><br>
+                            - 마케팅 전략 설계 및 실행, 주요 A,B 캠페인 관리로 회사의 온라인 존재감 강화<br>
+                            - 메타 광고집행을 위한 홈페이지 와이어프레임 설계<br>
+                            - 메타 광고 캠페인 집행 및 성과 분석<br>
+                            - UTM 및 Google Analytics 관리 저예산 최적화<br>
+                            - 다양한 캠페인 설계 및 콘텐츠 기획, 타겟/논타겟 맞춤형 캠페인 실행
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024.07 - 09</div>
+                        <div class="timeline-title">언니의 인맥 마케팅 매니저</div>
+                        <p class="timeline-desc">
+                            Internship<br><br>
+                            - 프로필 카드 UX/UI 디자인을 통해 사용자 인터페이스 개선 및 고객 만족도 향상<br>
+                            - 메타 광고 캠페인 집행 및 성과 분석<br>
+                            - 이벤트 랜딩페이지 제작으로 참가자 수 증대 및 브랜드 인지도 확장 <br>
+                            - 콘텐츠 기획 및 제작을 통해 2달간 상위 고객 전환
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023.07-24.05</div>
+                        <div class="timeline-title">북아이피스 마케팅 디자이너</div>
+                        <p class="timeline-desc">
+                            Growth marketing Team Designer<br><br>
+                            - 60개 이상의 연구소의 브랜딩 디자인 작업으로 브랜드 이미지 통일성 강화<br>
+                            - 블로그 및 아티클 썸네일 디자인으로 콘텐츠 조회수 및 방문자 수 증가<br>
+                            - 랜딩페이지 제작으로 참가자 수 증대 및 브랜드 인지도 확장 <br>
+                            - 사내 피그마 원데이 클래스를 통해 팀원들의 사용 툴 강화 및 효율적인 협업
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-title">써클커넥션 행사디자이너</div>
+                        <p class="timeline-desc">
+                            Designer<br><br>
+                            - 테크엠 3주년 행사 디자인(무대 그래픽, 배너, 사이니지 등) 전체적인 디자인<br>
+                            - 비들아시아, 이드서울, Groove Connection Vol.2, 폴카닷해커톤 등 작업<br>
+                            - 행사 관련 디자인(현수막, 배너, 명찰 등)을 통해 행사 브랜드 제작
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021.04 - 2022.01</div>
+                        <div class="timeline-title">디자인라리 시각디자이너</div>
+                        <p class="timeline-desc">
+                            Designer<br><br>
+                            - 패키지, 현수막, 브로슈어, 명함, 로고 등 다양한 브랜드 제작 주요 담당<br>
+                            - 클라이언트와의 협업을 통해 요구사항을 정확히 반영한 결과물 제공
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-column">
+                <h2>My Activities</h2>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-title">전주공업고등학교 - 토목과</div>
+                        <p class="activity-desc">졸업 (2018년 02월)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">Introduction to UI Design - 수료<br>
+                            Foundations of User Experience Design
+                        </div>
+                        <p class="activity-desc">University of Minnesota (2022년 10월 7일)<br>
+                            Google (2022년 12월 2일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">etoos 이투스북 디자이너 - 프리랜서</div>
+                        <p class="activity-desc">(2022년 09월 1일 - 10월 31일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">청년마케터서포터즈1기 - 수료</div>
+                        <p class="activity-desc">(2023년 03월 05일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">Nullz 파트너 크리에이터 디자이너</div>
+                        <p class="activity-desc">(2024년 11월 20일 - 2025년 2월 28일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">사일런트몬스터(silentmonster) - 창업</div>
+                        <p class="activity-desc">(2024년 05월 25일 - 2025년 2월 28일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">Tableau - Data + Movies - 수료</div>
+                        <p class="activity-desc">(2025년 5월 10일)</p>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-title">패스트캠퍼스 AI 커리어핏 - 우수장학생</div>
+                        <p class="activity-desc">(2025년 11월 05일)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-group">
+                <h3>Design</h3>
+                <div class="tags">
+                    <span>Photoshop / Illustrator / Indesign</span>
+                    <span>Figma</span>
+                    <span>UX/UI</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Marketing</h3>
+                <div class="tags">
+                    <span>GA / GTM</span>
+                    <span>Meta Marketing</span>
+                    <span>Branding</span>
+                    <span>Content creation</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Etc</h3>
+                <div class="tags">
+                    <span>slack</span>
+                    <span>Notion</span>
+                    <span>Obsidian</span>
+                    <span>HTML / CSS / JS</span>
+                    <span>Prompt Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <p class="section-subtitle">저와 함께 일했던 사람들이 저를 이렇게 기억해줬어요!</p>
+
+        <div class="references-grid">
+            <div class="reference-card">
+                <div class="reference-header">
+                    <img src="../public/images/ffflogo.svg" alt="ffflogo" class="reference-logo">
+                    <div>
+                        <div class="reference-author">
+                            <div class="reference-author">Ji Seong Han</div>
+                        </div>
+                        <div style="color: #9999B0; font-size: 14px;">IT Business Development Strategist l
+                            Product/Project Manager</div>
+                    </div>
+                </div>
+                <p class="reference-text">
+                    If I had to describe her in one word, it’d be pathfinder.<br><br>
+                    She’s the kind of marketer you want on your team if you’re facing a tough challenge or need someone
+                    who can really think things through and make things happen.<br><br>
+                    I worked with her for 6 months on a new product launch, and she gave it everything she had. She
+                    brought so much passion, wasn’t afraid to try new things, and always stayed honest and bold.<br><br>
+                    What I really appreciated was how seriously she took our go-to-market strategy—not just doing what
+                    was handed to her.<br><br>
+                    No doubt, if I get the chance to work with a marketer again, she’s the first person I’d call.
+
+                </p>
+            </div>
+            <div class="reference-card">
+                <div class="reference-header">
+                    <img src="../public/images/uxdotlogo.svg" alt="uxdotlogo" class="reference-logo">
+                    <div>
+                        <div class="reference-author">Sungkwon Bae</div>
+                        <div style="color: #9999B0; font-size: 14px;">Co-founder @uxdot.corp<br>And Director @albatross
+                            korea</div>
+                    </div>
+                </div>
+                <p class="reference-text">
+                    성장의 의지가 강하며 학습능력도 뛰어납니다.<br><br>
+                    직무에서의 팔로업도 정확한 디렉션을 제시하면 의도대로 칼같이 잘 만들어서 고객의 니즈에 맞춰줍니다.<br><br>
+                    업무 속도도 빠른 편이여서 오히려 저희가 제안하는것이 느리다고 생각이 들 정도로 시원시원합니다.<br><br>
+                    이 외 여러가지 이유로 추천합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <h3>프로젝트 문의 또는 협업 제안이 있으신가요?</h3>
+                <p>
+                    양식에 맞춰 내용을 작성해주시면,<br>
+                    <span class="contact-highlight">24시간 이내 이메일로 연락드리겠습니다.</span>
+                </p>
+            </div>
+            <div class="contact-right">
+                <h3>함께 시작해볼까요?</h3>
+                <form id="contactForm">
+                    <input type="email" placeholder="이메일" required>
+                    <input type="text" placeholder="이름" required>
+                    <input type="text" placeholder="제목" required>
+                    <textarea placeholder="내용" required></textarea>
+                    <button type="submit">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="../public/images/logo.svg" alt="logo" class="footer-logo">
+                <p>
+                    <span class="footer-highlight">작은 손길로 시작된 무언가가 세상에 울림을 만들 수 있기를.</span><br>
+                    E-mail hongsinugget@gmail.com
+                </p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="https://hongsinugget.tistory.com/"><img src="../public/images/tistory.svg"
+                            alt="tistory"></a>
+                    <a href="https://github.com/hongsinugget"><img src="../public/images/github.svg" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/yangsubindev/"><img src="../public/images/linkedin.svg"
+                            alt="linkedin"></a>
+                </div>
+                <div class="footer-copyright">© 2025 Hongsinugget. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-images" id="modalImages">
+                <div class="modal-image"><img src="../public/images/gimjepay/gimje_2.png" alt="김제페이"></div>
+                <div class="modal-image"><img src="../public/images/gimjepay/gimje_3.png" alt="김제페이"></div>
+                <div class="modal-image"><img src="../public/images/gimjepay/gimje_map.png" alt="김제페이"></div>
+            </div>
+            <div class="image-dots" id="imageDots">
+                <div class="image-dot active"></div>
+                <div class="image-dot"></div>
+                <div class="image-dot"></div>
+            </div>
+            <h2 class="modal-title">김제페이</h2>
+            <p class="modal-subtitle"></p>
+            <div class="modal-tags">
+                <span>Figma</span>
+                <span>Html/css</span>
+                <span>Node.js</span>
+                <span>jquery</span>
+                <span>javascript</span>
+                <span>vercel</span>
+                <span>Notion</span>
+                <span>kakao/naver API</span>
+            </div>
+            <div class="modal-description">
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
