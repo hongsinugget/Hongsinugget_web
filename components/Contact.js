@@ -56,7 +56,7 @@ export default function Contact() {
                     <form id="contactForm" ref={form} onSubmit={handleSubmit}>
                         <input type="email" name="email" placeholder="이메일" required />
                         <input type="text" name="name" placeholder="이름" required />
-                        <input type="text" name="title" placeholder="제목" required />
+                        <input type="text" name="subject" placeholder="제목" required />
                         <textarea name="message" placeholder="내용" required></textarea>
                         <button type="submit" disabled={isSubmitting}>
                             {isSubmitting ? '전송 중...' : '문의하기'}
