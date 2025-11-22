@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #0A0A1A;
+    overflow-x: hidden;
 }
 
 body {
@@ -693,7 +694,6 @@ h2 {
 }
 
 .section-column h2 {
-    font-size: 28px;
     font-weight: 700;
     margin-bottom: 40px;
     background: linear-gradient(90deg, #0B41F2, #00DDEB);
@@ -733,6 +733,7 @@ h2 {
     color: #0055FF;
     font-weight: 600;
     margin-bottom: 8px;
+    display: none;
 }
 
 .timeline-title {
@@ -876,10 +877,10 @@ h2 {
 }
 
 .contact-left h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, #0055FF, #00DDEB);
+    background: linear-gradient(90deg, #0B41F2, #00DDEB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1082,5 +1083,15 @@ h2 {
 
     .footer-right {
         align-items: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
     }
 }

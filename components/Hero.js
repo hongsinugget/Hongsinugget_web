@@ -60,7 +60,7 @@ export default function Hero() {
                         <div className="social-icons">
                             <a href="https://hongsinugget.tistory.com/"><img src="/images/tistory.svg" alt="tistory" /></a>
                             <a href="https://github.com/hongsinugget"><img src="/images/github.svg" alt="github" /></a>
-                            <a href="https://www.linkedin.com/in/yangsubindev/"><img src="/images/linkedin.svg" alt="linkedin" /></a>
+                            <a href="https://www.linkedin.com/in/yangsubindev/"><img src="/images/LinkedIn.svg" alt="linkedin" /></a>
                         </div>
                     </div>
                 </div>
