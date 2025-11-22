@@ -374,14 +374,20 @@ h2 {
 @media (max-width: 768px) {
     .filter-tabs {
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: hidden;
         max-width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 4px;
+        gap: 2px;
     }
 
     .filter-tabs::-webkit-scrollbar {
         display: none;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
 
@@ -1179,6 +1185,11 @@ h2 {
         white-space: nowrap;
         font-size: 11px;
         display: block;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+        color: #202039;
     }
 }
 
