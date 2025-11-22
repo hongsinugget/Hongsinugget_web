@@ -17,6 +17,15 @@ body {
     position: relative;
 }
 
+body.modal-open {
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+body.modal-open #header {
+    display: none !important;
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -376,8 +385,10 @@ h2 {
         flex-wrap: nowrap;
         max-width: 100%;
         justify-content: center;
-        padding: 4px;
-        gap: 2px;
+        padding: 6px;
+        gap: 4px;
+        background: transparent;
+        /* Remove background to prevent clipping */
     }
 
     .filter-tabs::-webkit-scrollbar {
@@ -385,8 +396,14 @@ h2 {
     }
 
     .filter-btn {
-        padding: 6px 10px;
-        font-size: 11px;
+        padding: 6px 12px;
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.5);
+        /* Add background to buttons instead */
+    }
+
+    .filter-btn.active {
+        background: #007AFE;
     }
 }
 
@@ -741,8 +758,8 @@ h2 {
 }
 
 .timeline-item:hover {
-    transform: translateY(-4px);
-    border-color: #0055FF;
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.05);
 }
 
 .timeline-item::before {
@@ -782,8 +799,8 @@ h2 {
 }
 
 .activity-card:hover {
-    transform: translateY(-4px);
-    border-color: #0055FF;
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.05);
 }
 
 .activity-title {
@@ -838,8 +855,8 @@ h2 {
 }
 
 .skill-group .tags span:hover {
-    background: rgba(0, 85, 255, 0.1);
-    border-color: #0055FF;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .references-grid {
@@ -1198,7 +1215,37 @@ h2 {
 
     .footer-copyright {
         font-size: 10px;
-        color: #1A1A2E;
+        color: #666680;
+        /* Brighter than #0A0A1A */
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+        word-break: keep-all;
+        padding: 0 20px;
+    }
+
+    .about-content {
+        font-size: 16px;
+        /* Match section-subtitle */
+        line-height: 1.8;
+        /* Match section-subtitle */
+        color: #FFFFFF;
+        /* Match section-subtitle */
+        font-weight: 300;
+        /* Match section-subtitle */
+        word-break: keep-all;
+        padding: 0 20px;
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 26, 0.9);
+        backdrop-filter: blur(10px);
     }
 }
 

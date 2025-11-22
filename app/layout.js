@@ -9,7 +9,7 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata = {
-    title: 'Hongsinugget Portfolio',
+    title: 'hongsinugget',
     description: 'Portfolio of Hongsinugget',
 };
 

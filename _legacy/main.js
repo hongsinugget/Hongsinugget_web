@@ -290,7 +290,7 @@
         // 모달 열기
         modal.classList.add('active');
         modal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('modal-open'); // Use class for better control
         console.log('✅ Modal opened');
       });
     });
@@ -301,7 +301,7 @@
         console.log('🔴 Close button clicked');
         modal.classList.remove('active');
         modal.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = 'auto';
+        document.body.classList.remove('modal-open');
       });
     }
 
@@ -311,7 +311,7 @@
           console.log('🔴 Modal background clicked');
           modal.classList.remove('active');
           modal.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = 'auto';
+          document.body.classList.remove('modal-open');
         }
       });
     }
