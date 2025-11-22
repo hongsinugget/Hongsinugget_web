@@ -374,7 +374,6 @@ h2 {
 @media (max-width: 768px) {
     .filter-tabs {
         flex-wrap: nowrap;
-        overflow-x: hidden;
         max-width: 100%;
         justify-content: center;
         padding: 4px;
@@ -386,8 +385,8 @@ h2 {
     }
 
     .filter-btn {
-        padding: 8px 12px;
-        font-size: 12px;
+        padding: 6px 10px;
+        font-size: 11px;
     }
 }
 
@@ -1185,11 +1184,21 @@ h2 {
         white-space: nowrap;
         font-size: 11px;
         display: block;
+        letter-spacing: -0.5px;
+        margin-bottom: 2px;
+    }
+
+    .footer-left p {
+        line-height: 1.4;
+    }
+
+    .footer-left p br {
+        display: none;
     }
 
     .footer-copyright {
         font-size: 10px;
-        color: #202039;
+        color: #1A1A2E;
     }
 }
 
