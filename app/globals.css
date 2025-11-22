@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-noto-sans-kr), sans-serif;
     background: linear-gradient(135deg, #0A0A1A 0%, #121221 100%);
     color: #E8E8F0;
     overflow-x: hidden;
@@ -424,7 +424,7 @@ h2 {
     transition: all 0.2s ease;
     font-weight: 600;
     font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-noto-sans-kr), sans-serif;
     white-space: nowrap;
     outline: none;
 }
@@ -765,6 +765,13 @@ h2 {
     transition: all 0.3s;
 }
 
+.timeline-item>div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .timeline-item:hover {
     transform: none;
 }
@@ -774,14 +781,14 @@ h2 {
 }
 
 .timeline-date {
-    color: #0055FF;
-    font-weight: 600;
+    color: #9999B0;
+    font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 8px;
-    display: none;
 }
 
 .timeline-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -962,7 +969,7 @@ h2 {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     color: white;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-noto-sans-kr), sans-serif;
     font-size: 15px;
     border: none;
 }

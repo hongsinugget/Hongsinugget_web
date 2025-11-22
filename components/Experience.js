@@ -6,8 +6,8 @@ export default function Experience() {
                     <h2>My Experience</h2>
                     <div className="timeline">
                         <div className="timeline-item">
-                            <div className="timeline-date">2025.10 - ing </div>
                             <div className="timeline-title">스마트잇 Performance Marketer</div>
+                            <div className="timeline-date">2025.10 - ing </div>
                             <p className="timeline-desc">
                                 Marketing Team leader<br /><br />
                                 - 메타 광고 콘텐츠 운영 기획, AI 활용 및 광고 제작<br />
@@ -18,8 +18,8 @@ export default function Experience() {
                         </div>
 
                         <div className="timeline-item">
-                            <div className="timeline-date">2025.02 - 06</div>
                             <div className="timeline-title">UXDOT 파트너 마케팅 매니저</div>
+                            <div className="timeline-date">2025.02 - 06</div>
                             <p className="timeline-desc">
                                 Marketing freelancer<br /><br />
                                 - 마케팅 전략 설계 및 실행, 주요 A,B 캠페인 관리로 회사의 온라인 존재감 강화<br />
@@ -31,8 +31,8 @@ export default function Experience() {
                         </div>
 
                         <div className="timeline-item">
-                            <div className="timeline-date">2024.07 - 09</div>
                             <div className="timeline-title">언니의 인맥 마케팅 매니저</div>
+                            <div className="timeline-date">2024.07 - 09</div>
                             <p className="timeline-desc">
                                 Internship<br /><br />
                                 - 프로필 카드 UX/UI 디자인을 통해 사용자 인터페이스 개선 및 고객 만족도 향상<br />
@@ -43,8 +43,8 @@ export default function Experience() {
                         </div>
 
                         <div className="timeline-item">
-                            <div className="timeline-date">2023.07-24.05</div>
                             <div className="timeline-title">북아이피스 마케팅 디자이너</div>
+                            <div className="timeline-date">2023.07-24.05</div>
                             <p className="timeline-desc">
                                 Growth marketing Team Designer<br /><br />
                                 - 60개 이상의 연구소의 브랜딩 디자인 작업으로 브랜드 이미지 통일성 강화<br />
@@ -55,8 +55,8 @@ export default function Experience() {
                         </div>
 
                         <div className="timeline-item">
-                            <div className="timeline-date">2023</div>
                             <div className="timeline-title">써클커넥션 행사디자이너</div>
+                            <div className="timeline-date">2023</div>
                             <p className="timeline-desc">
                                 Designer<br /><br />
                                 - 테크엠 3주년 행사 디자인(무대 그래픽, 배너, 사이니지 등) 전체적인 디자인<br />
@@ -66,8 +66,8 @@ export default function Experience() {
                         </div>
 
                         <div className="timeline-item">
-                            <div className="timeline-date">2021.04 - 2022.01</div>
                             <div className="timeline-title">디자인라리 시각디자이너</div>
+                            <div className="timeline-date">2021.04 - 2022.01</div>
                             <p className="timeline-desc">
                                 Designer<br /><br />
                                 - 패키지, 현수막, 브로슈어, 명함, 로고 등 다양한 브랜드 제작 주요 담당<br />

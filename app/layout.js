@@ -6,6 +6,7 @@ const notoSansKr = Noto_Sans_KR({
     subsets: ['latin'],
     weight: ['100', '300', '400', '500', '700', '900'],
     display: 'swap',
+    variable: '--font-noto-sans-kr',
 });
 
 export const metadata = {
@@ -15,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="ko" className={notoSansKr.className}>
+        <html lang="ko" className={notoSansKr.variable}>
             <body>
                 <MouseFollower />
                 {children}
