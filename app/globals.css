@@ -18,11 +18,15 @@ body {
     position: relative;
 }
 
+html.modal-open,
 body.modal-open {
     overflow: hidden !important;
+    height: 100% !important;
+    /* Force height to prevent scrolling */
     touch-action: none;
 }
 
+html.modal-open #header,
 body.modal-open #header {
     display: none !important;
 }
@@ -42,8 +46,9 @@ body::before {
 }
 
 #header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 100;
     padding: 20px 5%;
     display: flex;
@@ -561,6 +566,8 @@ h2 {
 
 .modal.active {
     display: flex;
+    z-index: 2147483647;
+    /* Max safe integer */
 }
 
 .modal-content {
@@ -1138,7 +1145,8 @@ h2 {
         min-height: 100%;
         background: #0A0A1A;
         /* Full dark background */
-        z-index: 9999;
+        z-index: 2147483647;
+        /* Max safe integer */
         overflow-y: auto;
         /* Scroll within modal */
         -webkit-overflow-scrolling: touch;

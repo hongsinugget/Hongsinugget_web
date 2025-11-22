@@ -290,7 +290,10 @@
         // 모달 열기
         modal.classList.add('active');
         modal.setAttribute('aria-hidden', 'false');
-        document.body.classList.add('modal-open'); // Use class for better control
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+        document.documentElement.classList.add('modal-open'); // Add to html for robust scroll lock
         console.log('✅ Modal opened');
       });
     });
@@ -302,6 +305,7 @@
         modal.classList.remove('active');
         modal.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('modal-open');
+        document.documentElement.classList.remove('modal-open');
       });
     }
 
@@ -311,7 +315,10 @@
           console.log('🔴 Modal background clicked');
           modal.classList.remove('active');
           modal.setAttribute('aria-hidden', 'true');
+          modal.classList.remove('active');
+          modal.setAttribute('aria-hidden', 'true');
           document.body.classList.remove('modal-open');
+          document.documentElement.classList.remove('modal-open');
         }
       });
     }
